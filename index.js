@@ -54,7 +54,8 @@ function removeFromCart(item) {
       cart.splice(i, 1)
       console.log(cart)}
     else {console.log('That item is not in your cart.')
-      return cart}}}
+      }}}
+return cart      
 }
 
 function placeOrder(cardNumber) {
