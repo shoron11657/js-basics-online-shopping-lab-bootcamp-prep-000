@@ -27,14 +27,14 @@ function viewCart() {
     itemsandprices.push(itemx +' at $'+ pricex)  }
   if (cart.length === 0){console.log('Your shopping cart is empty.')}
   else if (cart.length === 1){console.log(`${intro} ${itemsandprices}.`)}
-  
+
   else if (cart.length === 2){
     var dositems = itemsandprices.join(' and ')
     console.log(`${intro} ${dositems}.`)}
   else if (cart.length > 2){
     debugger
     var beginning = itemsandprices.slice(0, -1).join(', ')
-    var end = itemsandprices.slice(-1);
+    var end = itemsandprices.slice(-1).join();
     console.log(`${intro} ${beginning} and ${end}.`)}
 }
 
