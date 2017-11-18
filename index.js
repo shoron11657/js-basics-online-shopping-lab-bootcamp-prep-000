@@ -32,7 +32,6 @@ function viewCart() {
     var dositems = itemsandprices.join(' and ')
     console.log(`${intro} ${dositems}.`)}
   else if (cart.length > 2){
-    debugger
     var beginning = itemsandprices.slice(0, -1).join(', ')
     var end = itemsandprices.slice(-1).join();
     console.log(`${intro} ${beginning}, and ${end}.`)}
@@ -49,9 +48,11 @@ function total() {
 
 function removeFromCart(item) {
   for (var i = 0; i < cart.length; i++){
-    if (cart[i].hasOwnProperty(item) === true){cart.splice(i, 1)
+    if (cart[i].hasOwnProperty(item) === true){
+      debugger 
+      cart.splice(i, 1)
       console.log(cart)}
-    else {console.log('That item is not in your cart.')
+      else {console.log('That item is not in your cart.')
       return cart}}
 }
 
