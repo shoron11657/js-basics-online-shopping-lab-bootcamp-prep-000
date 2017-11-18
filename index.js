@@ -35,7 +35,7 @@ function viewCart() {
     debugger
     var beginning = itemsandprices.slice(0, -1).join(', ')
     var end = itemsandprices.slice(-1).join();
-    console.log(`${intro} ${beginning} and ${end}.`)}
+    console.log(`${intro} ${beginning}, and ${end}.`)}
 }
 
 function total() {
