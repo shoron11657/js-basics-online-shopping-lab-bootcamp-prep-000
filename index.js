@@ -56,7 +56,7 @@ function removeFromCart(item) {
       console.log(cart)
       present = true}
           }}
-if (present === false){console.log('That item is not in your cart.')}      
+if (present === false){console.log('That item is not in your cart.')}
 return cart
 }
 
